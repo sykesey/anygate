@@ -1,0 +1,87 @@
+<!DOCTYPE html >
+    <html lang="en" manifest="anygate.appcache">
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="css/bootstrap.min.css">
+            <link rel="stylesheet" href="dist/css/bootstrap3/bootstrap-switch.min.css">
+            <script src="js/jquery.min.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="dist/js/bootstrap-switch.min.js"></script>
+            <script src="js/stopwatch.js"></script>
+            <link rel="stylesheet" href="css/style-0.1.0.css"/>
+            <script src="js/anygate-0.1.1.js"></script>
+            <script>
+                $( function() {
+                    $("[name='cbLoop']").bootstrapSwitch();
+                    window.applicationCache.addEventListener('updateready', function() { window.applicationCache.swapCache(); }, false);
+                });
+                
+            </script>
+        </head>
+      <body onload="GateUp()">
+         <div id="apptop">
+          <button type="button" id="settings_button" class="btn btn-default" aria-label="Settings" data-toggle="modal" data-target="#settingsModal">
+            <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+           </button>
+          <h2>A N Y G A T E</h2>
+         </div>
+        <div class="container">
+         
+        
+        <div id="gate_color1" class="light black">&nbsp;</div>
+        <div id="gate_color2" class="light black">&nbsp;</div>
+        <div id="gate_color3" class="light black">&nbsp;</div>
+        <div id="gate_color4" class="light black">&nbsp;</div>
+        
+        <div class="text-center">
+        <button id="startbutton" disabled="true" class="btn btn-primary btn-lrg" type="button" onclick="StartCadence()">Start</button>
+        <div id="log"></div>
+        <div id="loopCountdown"></div>
+        <div id="stopwatchResult"></div>
+        </div>
+    </div>
+     <audio id="cadence" preload="auto">
+            <source src="asset/cadence_full.mp3"/>
+            <source src="asset/cadence_full.ogg"/>
+              Your browser does not support HTML5....
+         </audio>
+      
+<div id="settingsModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Settings</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+         <div class="col-md-2">Loop</div>
+         <div class="col-md-2"><input type="checkbox" id="cbLoop" name="cbLoop"></div>
+        </div>
+        &nbsp;<br/>
+        <div class="row">
+         <div class="col-md-2">Loop Timer</div>
+         <div class="col-md-2">
+            <select id="selLoop" class="form-control">
+                <option value="5">5s</option>
+                <option value="10">10s</option>
+                <option value="30">30s</option>
+                <option value="60" selected>60s</option>
+                <option value="120">2mins</option>
+                <option value="180">3mins</option>
+            </select>
+         </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    </body>
+        
+    </html>

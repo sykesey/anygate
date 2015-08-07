@@ -1,0 +1,20 @@
+CACHE MANIFEST
+index.html
+asset/background.jpeg
+css/bootstrap.min.css
+js/jquery.min.js
+js/bootstrap.min.js
+dist/css/bootstrap3/bootstrap-switch.min.css
+dist/js/bootstrap-switch.min.js
+asset/cadence_full.mp3
+asset/cadence_full.ogg
+css/style-0.1.0.css
+js/stopwatch.js
+js/anygate-0.1.1.js
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.woff
+fonts/glyphicons-halflings-regular.woff2
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+
+#VERSION 0.32

@@ -1,0 +1,86 @@
+body{
+    color: white;
+    background-color: #ccc;
+    background: url(../asset/background.jpeg);
+   
+}
+#settingsModal {
+    color: black;
+}
+#settings_button {
+    float: right;
+    margin-right: 5px;
+    margin-top: 18px;
+    position: absolute;
+    right: 5px;
+}
+#startbutton {
+    font-size: 2em;
+    
+}
+#apptop {
+    text-align: center;
+    background: white;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display:block;
+    margin: 0;
+    margin-top: -15px;
+    padding: 5px;
+    color: black;
+    font-family: Myriad, sans-serif; 
+}
+#apptop h2 {
+    font-weight: 100;
+}
+
+div.light {
+    display: block;
+    height: 40px;
+    width: 150px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.light.black {
+    background-color: black;
+}
+
+.light.red {
+    background-color: red !important;
+}
+
+.light.amber {
+    background-color: yellow !important;
+}
+
+.light.green {
+    background-color: green !important;
+}
+
+#log {
+    margin-top: 20px;
+    color: #ccc;
+    font-size: 120%;
+    font-family: monospace;
+}
+#stopwatchResult {
+    margin-top: 20px;
+    color: #aa8;
+    font-size: 100%;
+    font-family: monospace;
+}
+
+#loopCountdown {
+    margin-top: 20px;
+    color: #aaf;
+    font-size: 120%;
+    font-family: monospace;
+}
+
+.container-fluid{
+    text-align: center;
+}
